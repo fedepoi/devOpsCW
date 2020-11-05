@@ -19,7 +19,6 @@ String hexadecimal="";
  rem=num%16;     hexadecimal= ch[rem] + hexadecimal;
             num= num/16;         }   
  System.out.println("Hexadecimal representation is : " + hexadecimal);   
- System.out.println("automated build test");
-
+ System.out.println("another change");
 }
 } 
