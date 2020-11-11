@@ -20,10 +20,10 @@ Scanner consoleReader = new Scanner(System.in);
 if(consoleReader.hasNextInt()){
  num=consoleReader.nextInt();
    if(num<0){System.out.println("please enter a positive integer");}
-} else 
+} else  
 
 
-num = consoleReader.nextInt(); 
+num = 0; //consoleReader.nextInt(); 
 String hexadecimal="";
           System.out.println("Converting the Decimal Value " + num + " to Hex..."); 
         while(num != 0)         {   
