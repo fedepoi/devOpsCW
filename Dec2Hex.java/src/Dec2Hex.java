@@ -5,7 +5,7 @@ class Dec2Hex{
         
        if(args.length==0){
            System.out.println("please provide a number");
-           System.exit(1);
+           System.exit(0);
        }
        else{
         if (args.length > 0)         {            
@@ -14,7 +14,7 @@ class Dec2Hex{
             }             
             catch (NumberFormatException e)              
             {System.err.println("Argument" + args[0] + " must be an integer.");                
-            System.exit(1);             
+            System.exit(0);             
             }        
         }
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
