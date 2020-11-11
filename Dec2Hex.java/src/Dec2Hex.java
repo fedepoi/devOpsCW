@@ -1,7 +1,10 @@
 import java.util.Scanner;
 class Dec2Hex{     
     public static int Arg1;     
-    public static void main(String args[])    {        
+    public static void main(String args[])    { 
+        
+       if(args.length==0){System.out.println("please provide a number");}
+       else{
         if (args.length > 0)         {            
             try             {                
                 Arg1 = Integer.parseInt(args[0]);            
@@ -22,6 +25,7 @@ class Dec2Hex{
             hexadecimal= ch[rem] + hexadecimal;            
             num= num/16;         
         }    
-        System.out.println("Hexadecimal representation is : " + hexadecimal);   
+        System.out.println("Hexadecimal representation is : " + hexadecimal); 
+       }
     }
 } 
