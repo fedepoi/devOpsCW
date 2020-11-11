@@ -3,7 +3,10 @@ class Dec2Hex{
     public static int Arg1;     
     public static void main(String args[])    { 
         
-       if(args.length==0){System.out.println("please provide a number");}
+       if(args.length==0){
+           System.out.println("please provide a number");
+           System.exit(1);
+       }
        else{
         if (args.length > 0)         {            
             try             {                
