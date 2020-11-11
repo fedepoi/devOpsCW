@@ -24,5 +24,7 @@ hexadecimal= ch[rem] + hexadecimal;
             num= num/16;         
 }    
 System.out.println("Hexadecimal representation is : " + hexadecimal);
-    }
+System.out.println("new line added to show automated test" );
+    
+}
 }
