@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -11,9 +12,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.zip.InflaterInputStream;
+import org.junit.After;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import sun.applet.Main;
+import static sun.applet.Main.main;
 import sun.misc.IOUtils;
 
 /**
@@ -25,26 +28,22 @@ public class Dec2HexTest {
     public Dec2HexTest() {
     }
 
-    /**
-     * Test of main method, of class Dec2Hex.
-     */
     @Test
-    public void testMain() throws IOException {
-    System.out.println("test whit positive number:");
-    String[] cars = {"22222"};
-    Dec2Hex.main(cars); 
+    public void testMain() {
+        System.out.println("test with a single positive value");
+        Dec2Hex instance = new Dec2Hex();
+        String [] args = { "134"};
+       instance.main(args);
     }
     
-     @Test
-    public void testMainOvalue() throws IOException {
-    System.out.println("test whit positive number:");
-    String[] cars = {"0"};
-    Dec2Hex.main(cars); 
+    
+    
+    @Test
+    public void testMainNegative1() {
+        System.out.println("test with a single positive value");
+        Dec2Hex instance = new Dec2Hex();
+        String [] args = { "-4"};
+       instance.testNeg(Integer.parseInt(args[0]));
     }
-     @Test
-    public void testMainNeg() throws IOException {
-    System.out.println("test whit positive number:");
-    String[] cars = {"6"};
-    Dec2Hex.main(cars); 
-    }
+    
 }
