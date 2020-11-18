@@ -3,12 +3,7 @@ import java.util.Scanner;
 class Dec2Hex{     
     public static int Arg1;     
     public static void main(String args[])    {
-        /*
-       int in = Integer.parseInt(args[0]);
-       if (in < 0){
-       System.out.println("please provide a positive integer");
-       System.exit(0);
-       }*/
+    
        if(args.length==0){
            System.out.println("please provide a number");
            System.exit(0);
@@ -23,7 +18,13 @@ class Dec2Hex{
             {System.err.println("Argument" + args[0] + " must be an integer.");                
             System.exit(0);             
             }        
-        } 
+        }
+         if (Arg1<0){
+         System.out.println("enter a positive int");
+         System.exit(0);
+         }
+        
+        
        }
         
         
@@ -40,14 +41,6 @@ class Dec2Hex{
         }    
         System.out.println("Hexadecimal representation is : " + hexadecimal); 
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     
 } 
