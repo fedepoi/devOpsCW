@@ -15,14 +15,22 @@ class Dec2Hex{
                 Arg1 = Integer.parseInt(args[0]);  
             }             
             catch (NumberFormatException e)              
-            {System.err.println("Argument" + args[0] + " must be an integer.");                
+            {System.err.println("Argument " + args[0] + " must be an integer.");                
             System.exit(0);             
             }        
+        } else if(args.length>1){
+        System.out.println("enter only one value");
+         System.exit(0);
         }
          if (Arg1<0){
          System.out.println("enter a positive int");
          System.exit(0);
          }
+         if (Arg1>Integer.MAX_VALUE){
+         System.out.println("enter a smaller number");
+         System.exit(0);
+         }
+         
         
         
        }
