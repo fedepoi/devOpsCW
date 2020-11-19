@@ -3,6 +3,11 @@ import java.util.Scanner;
 class Dec2Hex{     
     public static int Arg1;     
     public static void main(String args[])    {
+        
+        if(args.length>1){
+        System.out.println("enter only one value");
+         System.exit(0);
+        }
     
        if(args.length==0){
            System.out.println("please provide a number");
@@ -18,9 +23,6 @@ class Dec2Hex{
             {System.err.println("Argument " + args[0] + " must be an integer.");                
             System.exit(0);             
             }        
-        } else if(args.length>1){
-        System.out.println("enter only one value");
-         System.exit(0);
         }
          if (Arg1<0){
          System.out.println("enter a positive int");
