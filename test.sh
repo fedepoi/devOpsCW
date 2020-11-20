@@ -21,3 +21,17 @@ echo ----------test with more than one value entered----------
 java Dec2Hex 85 78999 four 89
 echo ""
 
+
+echo ----------handle program fail----------
+echo ----------test with no argument----------
+java Dec2Hex
+STATUS="${?}"
+echo "${STATUS}"
+if [ "${STATUS}" -eq 0 ]
+then
+	echo test is passed
+else
+        set -e
+        echo -e "\e[31mtest is not passed"
+fi
+
