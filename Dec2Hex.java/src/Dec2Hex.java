@@ -8,8 +8,17 @@ class Dec2Hex{
         System.out.println("enter only one value");
          System.exit(1);
         }
+         if (Arg1<0){
+         System.out.println("enter a positive int");
+         System.exit(1);
+         }
+         if (Arg1>Integer.MAX_VALUE){
+         System.out.println("enter a smaller number");
+         System.exit(1);
+         }
     
-       if(args.length==0){
+      
+         if(args.length==0){
            System.out.println("please provide a number");
            System.exit(1);
        } 
@@ -21,17 +30,10 @@ class Dec2Hex{
             }             
             catch (NumberFormatException e)              
             {System.err.println("Argument " + args[0] + " must be an integer.");                
-            System.exit(1);             
+            System.exit(0);             
             }        
         }
-         if (Arg1<0){
-         System.out.println("enter a positive int");
-         System.exit(1);
-         }
-         if (Arg1>Integer.MAX_VALUE){
-         System.out.println("enter a smaller number");
-         System.exit(1);
-         }
+        
          
         
         
