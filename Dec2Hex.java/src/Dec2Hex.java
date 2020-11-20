@@ -50,7 +50,7 @@ class Dec2Hex{
             num= num/16;         
         }    
         System.out.println("Hexadecimal representation is : " + hexadecimal); 
-         
+         System.out.println("thanks for using this program "); 
         System.exit(0);
     }
     
