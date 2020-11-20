@@ -11,7 +11,7 @@ class Dec2Hex{
     
        if(args.length==0){
            System.out.println("please provide a number");
-           System.exit(0);
+           System.exit(1);
        } 
        else{
         if (args.length > 0) {            
