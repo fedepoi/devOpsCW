@@ -6,7 +6,7 @@ class Dec2Hex{
         
         if(args.length>1){
         System.out.println("enter only one value");
-         System.exit(0);
+         System.exit(1);
         }
     
        if(args.length==0){
@@ -21,16 +21,16 @@ class Dec2Hex{
             }             
             catch (NumberFormatException e)              
             {System.err.println("Argument " + args[0] + " must be an integer.");                
-            System.exit(0);             
+            System.exit(1);             
             }        
         }
          if (Arg1<0){
          System.out.println("enter a positive int");
-         System.exit(0);
+         System.exit(1);
          }
          if (Arg1>Integer.MAX_VALUE){
          System.out.println("enter a smaller number");
-         System.exit(0);
+         System.exit(1);
          }
          
         
@@ -50,6 +50,7 @@ class Dec2Hex{
             num= num/16;         
         }    
         System.out.println("Hexadecimal representation is : " + hexadecimal); 
+        System.exit(0);
     }
     
     
