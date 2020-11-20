@@ -26,12 +26,11 @@ echo ----------handle program fail----------
 echo ----------test with no argument----------
 java Dec2Hex
 STATUS="${?}"
-echo "${STATUS}"
 if [ "${STATUS}" -eq 0 ]
 then
 	echo test is passed
 else
         set -e
-        echo -e "\e[31mtest is not passed"
+        echo -e "test is not passed"
 fi
 
