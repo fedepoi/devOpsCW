@@ -3,6 +3,7 @@ echo ----------Start testing script----------
 javac Dec2Hex.java/src/Dec2Hex.java
 cd Dec2Hex.java/src
 echo ""
+
 echo ----------handle program fail----------
 echo ""
 echo ----------test with no argument----------
